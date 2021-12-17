@@ -9,6 +9,8 @@
   <link rel="icon" type="image/png" href="images/football1.png" sizes="32x32" />
   <link rel="icon" type="image/png" href="images/football1.png" sizes="16x16" />
   <title>Travel</title>
+<!--  html-->
+  <link rel="import" href="footer.html" id="footer">
   <!--stylesheet-->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,900" rel="stylesheet">
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -314,35 +316,40 @@
       </div>
     </div>
   </section>
-
-  <footer class="footer text-center" id="footer">
-    <div class="container">
-      <ul class="list-inline">
-        <li class="list-inline-item">
-          <a class="social-link rounded-circle text-white mr-3" href="javascript:void(0)">
-              <i class="fa fa-github" aria-hidden="true"></i>
-            </a>
-        </li>
-        <li class="list-inline-item">
-          <a class="social-link rounded-circle text-white mr-3" href="javascript:void(0)">
-              <i class="fa fa-qq" aria-hidden="true"></i>
-            </a>
-        </li>
-        <li class="list-inline-item">
-          <a class="social-link rounded-circle text-white" href="javascript:void(0)">
-              <i class="fa fa-weibo" aria-hidden="true"></i>
-            </a>
-        </li>
-      </ul>
-      <p class="xi">粤CP备 2021002702号-1</p>
-      <p class="xi">© 2021 李球 Inc. All rights reserved • Terms of Use Privacy Policy</p>
-      <p class="xi">地址:中国广东省广州市广外南苑7-421</p>
-    </div>
-  </footer>
+<!--  <footer class="footer text-center" id="footer">-->
+<!--    <div class="container">-->
+<!--      <ul class="list-inline">-->
+<!--        <li class="list-inline-item">-->
+<!--          <a class="social-link rounded-circle text-white mr-3" href="javascript:void(0)">-->
+<!--              <i class="fa fa-github" aria-hidden="true"></i>-->
+<!--            </a>-->
+<!--        </li>-->
+<!--        <li class="list-inline-item">-->
+<!--          <a class="social-link rounded-circle text-white mr-3" href="javascript:void(0)">-->
+<!--              <i class="fa fa-qq" aria-hidden="true"></i>-->
+<!--            </a>-->
+<!--        </li>-->
+<!--        <li class="list-inline-item">-->
+<!--          <a class="social-link rounded-circle text-white" href="javascript:void(0)">-->
+<!--              <i class="fa fa-weibo" aria-hidden="true"></i>-->
+<!--            </a>-->
+<!--        </li>-->
+<!--      </ul>-->
+<!--      <p class="xi">粤CP备 2021002702号-1</p>-->
+<!--      <p class="xi">© 2021 李球 Inc. All rights reserved • Terms of Use Privacy Policy</p>-->
+<!--      <p class="xi">地址:中国广东省广州市广外南苑7-421</p>-->
+<!--    </div>-->
+<!--  </footer>-->
+  <script type="text/javascript">
+    document.write(footer.import);
+  </script>
 </div>
 </body>
 
 </html>
+<script type="text/javascript">
+  document.write(footer.import.body.innerHTML);
+</script>
 <script src="./js/vue.js"></script>
 <script src="./js/axios.js"></script>
 <script>
