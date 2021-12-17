@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+
+    <title>英超积分榜</title>
+    <meta name="keywords" content="英超积分榜">
+    <meta name="description" content="英超积分榜">
+    <link rel="stylesheet" href="http://sports.sina.com.cn/css/1256/2013/gjzq/common.css">
+    <!--stylesheet-->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,900" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="css/points_style.css" rel="stylesheet" type="text/css">
+    <!--scripts-->
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/all-plugins.js"></script>
+    <script type="text/javascript" src="js/plugins-activate.js"></script>
+
+
+<body><!-- body code begin -->
+
+
+<!-- 导航 begin -->
+<style type="text/css">
+  .secondaryHeader {
+    height: 33px;
+    overflow: hidden;
+    color: #000;
+    font-size: 12px;
+    font-weight: 100;
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #cccccc;
+  }
+
+  .secondaryHeader a,
+  .secondaryHeader a:visited {
+    color: #000;
+    text-decoration: none;
+  }
+
+  .secondaryHeader a:hover,
+  .secondaryHeader a:active {
+    color: #c00;
+    text-decoration: underline;
+  }
+
+  .sHBorder {
+    padding: 0 10px 0 12px;
+    overflow: hidden;
+    zoom: 1;
+  }
+
+  .sHLogo {
+    float: left;
+    height: 31px;
+    line-height: 31px;
+    overflow: hidden;
+  }
+
+  .sHLogo span,
+  .sHLogo span a {
+    display: block;
+    *float: left;
+    display: table-cell;
+    vertical-align: middle;
+    *display: block;
+    *font-size: 27px;
+    *font-family: Arial;
+    height: 31px;
+  }
+
+  .sHLogo span,
+  .sHLogo span a img {
+    vertical-align: middle;
+  }
+
+  .sHLinks {
+    float: right;
+    line-height: 31px;
+  }
+
+  .blk07 {
+    padding: 20px 12px 0
+  }
+
+  .blk07 .txt {
+    padding-left: 22px;
+  }
+
+  .list03 li {
+    border-bottom: none !important
+  }
+</style>
+
+
+<div class="logo">
+    <a href="index.html"><i class="fa fa-soccer-ball-o" aria-hidden="true" id="turnb"><span id="turnbb">老李足球</span></i></a>
+</div>
+<a class="menu-toggle rounded" href="#">
+    <i class="fa fa-bars"></i>
+</a>
+<nav id="sidebar-wrapper">
+    <ul class="sidebar-nav">
+        <li class="sidebar-brand">
+            <a class="smooth-scroll" href="#Header"></a>
+        </li>
+        <li class="sidebar-nav-item">
+            <a class="smooth-scroll" href="#page-top">首页</a>
+        </li>
+        <!--      <li class="sidebar-nav-item">-->
+        <!--        <a class="smooth-scroll" href="#About">About</a>-->
+        <!--      </li>-->
+        <li class="sidebar-nav-item">
+            <a class="smooth-scroll" href="#Services">联赛榜单</a>
+        </li>
+        <li class="sidebar-nav-item">
+            <a class="smooth-scroll" href="#Testimonials">英超诸强</a>
+        </li>
+        <li class="sidebar-nav-item">
+            <a class="smooth-scroll" href="#Portfolio">更多</a>
+        </li>
+        <li class="sidebar-nav-item">
+            <a class="smooth-scroll" href="#footer">版权信息</a>
+        </li>
+    </ul>
+</nav>
+<!-- 导航 end -->
+
+<div id="app">
+        <div class="wrap">
+
+            <div class="standing-nav">
+
+                <div class="nav-row2">
+                    <ul class="udv-clearfix">
+
+                        <li >
+                            <span class="ctr">
+                                <em><a href="points.html" class="link-fff">英超积分</a></em>
+        <!--              						<span><a href="http://sports.sina.com.cn/g/pl/fixtures.html" class="link-fff">赛程</a></span>-->
+                            </span>
+                            <i></i>
+                        </li>
+
+                        <li class="current">
+                            <span class="ctr">
+                                <em><a href="score.html" class="link-fff">射手榜</a></em>
+                      <!--						<span><a href="http://sports.sina.com.cn/g/laliga/fixtures.html" class="link-fff">赛程</a></span>-->
+                            </span>
+                            <i></i>
+                        </li>
+
+                        <li>
+                            <span class="ctr">
+                                <em><a href="assist.html" class="link-fff">助攻榜</a></em>
+                      <!--						<span><a href="http://sports.sina.com.cn/g/seriea/fixtures.html" class="link-fff">赛程</a></span>-->
+                            </span>
+                            <i></i>
+                        </li>
+
+                        <li>
+                            <span class="ctr">
+                                <em><a href="http://sports.sina.com.cn/g/bundesliga/table.html" class="link-fff">红牌榜</a></em>
+                      <!--						<span><a href="http://sports.sina.com.cn/g/bundesliga/fixtures.html" class="link-fff">赛程</a></span>-->
+                            </span>
+                            <i></i>
+                        </li>
+
+
+                    </ul>
+                </div>
+            </div>
+        <style type="text/css">
+          .standing-main .title{position:relative;}
+          .standing-main .title h3{float:left;font-weight:normal;}
+          .sel-blk{float:right;font-size:14px;color:#333;}
+          .sel-blk label{font-size:16px;}
+          .sel-blk select{width:120px;}
+        </style>
+
+
+
+        <div class="standing-main">
+
+            <div class="standing-shooter">
+                <div class="title" name="shooter">射手榜</div>
+                <div class="content" id="ssb" style="height: 800px; " ><table>
+                    <tbody><tr class="bg">
+                        <th class="w60">排名</th>
+                        <th class="w200">球员</th>
+                        <th class="w200">球队</th>
+                        <th class="w125 pointer" data-sort="score"><span class="down">总进球数</span></th>
+                        <th class="w125 pointer" data-sort="point"><span>上场次数</span></th>
+                        <th class="w125 pointer" data-sort="master"><span>替补上场次数</span></th>
+                    </tr>
+
+                    <tr v-for="(player,index) in players" :key="player.player_id" >
+                        <td v-text="index+1"></td>
+                        <td v-text="player.player_name"></td>
+                        <td v-text="player.club_name"></td>
+                        <td v-text="player.fgs"></td>
+                        <td v-text="player.actions"></td>
+                        <td v-text="player.actAsSub"></td>
+
+                    </tr>
+
+
+                    </tbody></table></div>
+            </div>
+
+
+        </div>
+
+        <!-- footer end -->
+    </div>
+</div>
+
+<footer class="footer text-center" id="footer">
+    <div class="container">
+        <ul class="list-inline">
+            <li class="list-inline-item">
+                <a class="social-link rounded-circle text-white mr-3" href="javascript:void(0)">
+                    <i class="fa fa-github" aria-hidden="true"></i>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a class="social-link rounded-circle text-white mr-3" href="javascript:void(0)">
+                    <i class="fa fa-qq" aria-hidden="true"></i>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a class="social-link rounded-circle text-white" href="javascript:void(0)">
+                    <i class="fa fa-weibo" aria-hidden="true"></i>
+                </a>
+            </li>
+        </ul>
+        <p class="xi">陕ICP备 2021002702号-1</p>
+        <p class="xi">© 2021 李球 Inc. All rights reserved • Terms of Use Privacy Policy</p>
+        <p class="xi">地址:中国陕西省榆林市榆阳区巴小路张窑则</p>
+    </div>
+</footer>
+
+</body>
+</html>
+<script src="./js/vue.js"></script>
+<script src="./js/axios.js"></script>
+<script>
+    const app = new Vue({
+        el: "#app",
+        data: {
+            players:[],
+            page:1,
+            rows:4,
+            totalPge:0,
+            total:0,
+            count:0
+        },
+        methods: {
+            findAll(){//查询所有
+                _this=this;
+                axios.get("http://localhost:8989/players/findPlayers").then((res)=>{
+                    _this.players=res.data.players;
+                    _this.page=res.data.page;
+                    _this.totalPge=res.data.totalPge;
+                    _this.totals=res.data.totals
+                })
+            },
+
+        },
+
+        created(){
+            this.findAll();
+        }
+    });
+</script>

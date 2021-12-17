@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.lhy.travel.dao.PlayerDao">
+    <select id="findPlayers" resultType="Player">
+        select * from PlayerInfo
+        order by fgs DESC
+            limit #{start},#{rows}
+    </select>
+    <select id="findTotals" resultType="Integer">
+        select count(Player_name) from PlayerInfo
+    </select>
+    <select id="findAss" resultType="Player">
+        select * from PlayerInfo
+        order by asts DESC
+            limit #{start},#{rows}
+    </select>
+
+    <insert id="save" parameterType="Player" useGeneratedKeys="true" keyProperty="Player_id">
+        insert into PlayerInfo values (#{Player_id},#{Player_name},#{Player_number},#{Player_nation},#{Player_age},#{height},#{weight},#{worth},#{Club_id},#{Club_name},#{Player_position},#{actions},#{ActAsSub},#{FGs},#{Asts},#{RC},#{YC})
+    </insert>
+
+    <delete id="delete" parameterType="String">
+        DELETE from PlayerInfo where Player_id=#{player_id}
+    </delete>
+
+    <select id="findOne" resultType="Player">
+        select * from PlayerInfo
+        where Player_id=#{player_id}
+    </select>
+
+    <update id="update" parameterType="Player">
+        update PlayerInfo set Player_name=#{Player_name},Player_nation=#{Player_nation},Player_age=#{Player_age},height=#{height},weight=#{weight},worth=#{worth},Club_id=#{Club_id},Club_name=#{Club_name},Player_position=#{Player_position},actions=#{actions}, ActAsSub=#{ActAsSub},FGs=#{FGs},Asts=#{Asts},RC=#{RC},YC=#{YC} where Player_id=#{Player_id}
+    </update>
+</mapper>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>注册页面</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        form {
+            width: 270px;
+        }
+
+        input {
+            width: 70%;
+            background: #eee;
+        }
+
+        input:focus {
+            background: #fff;
+        }
+
+        form {
+            padding: 0 12px 12px;
+        }
+
+        label {
+            display: block;
+            padding-bottom: 12px;
+        }
+
+        #img-vcode {
+            width: 56px;
+            height: 21px;
+            float: right;
+            position: relative;
+            top: 2px;
+            left: -6px
+        }
+
+        .label-text {
+            width: 30%;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+<div id="app">
+    <div id="wrap">
+        <div id="header">
+            <div style="float: right;padding-top: 24px"><span v-text="time"/> &emsp; </div>
+            <h1>旅游信息管理系统</h1>
+        </div>
+        <div id="header-bar"></div>
+        <div id="content" style="height: 360px">
+            <img src="img/timg.jpg" style="float: right;height: 320px">
+            <h2>注册</h2>
+            <form action="province/provincelist.html" method="post">
+                <label>
+                    <div class="label-text">账 号：</div>
+                    <input type="text" name="username" v-model="user.username">
+                </label>
+                <label>
+                    <div class="label-text">密 码：</div>
+                    <input type="password" name="password" v-model="user.password">
+                </label>
+                <label>
+                    <div class="label-text">邮 箱：</div>
+                    <input type="text" name="email" v-model="user.email">
+                </label>
+                <!--前后端分离的架构, 动态访问验证码-->
+                <img src="http://localhost:8989/user/getImage" id="img-vcode" >
+                <label>
+                    <div class="label-text">验证码：</div>
+                    <input type="text" v-model="code" name="vcode" style="width: 100px">
+                </label>
+                <button type="button" @click="saveUserInfo" >提 交</button>
+                <a href="login.html">去登录</a>
+            </form>
+        </div>
+        <div id="footer">
+            yusael~
+        </div>
+    </div>
+</div>
+</body>
+</html>
+
+<script src="./js/vue.js"></script>
+<script src="./js/axios.min.js"></script>
+<script>
+    const app = new Vue({
+        el: "#app",
+        data: {
+            user: {},
+            code: "",
+        },
+        methods: {
+            saveUserInfo() {
+                console.log(this.user);
+                console.log(this.code);
+                axios.post("https://localhost:8989/user/register?+this.node+this.user").then((res)=>{
+                             console.log(res.data)
+                    });
+                }
+            }
+        });
+</script>

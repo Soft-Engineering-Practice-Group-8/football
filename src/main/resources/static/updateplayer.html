@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" type="image/png" href="images/football1.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="images/football1.png" sizes="16x16" />
+    <title>Travel</title>
+    <!--stylesheet-->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,900" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="css/index_style.css" rel="stylesheet" type="text/css">
+    <link href="css/custom-responsive-styles.css" rel="stylesheet" type="text/css">
+    <!--scripts-->
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/all-plugins.js"></script>
+    <script type="text/javascript" src="js/plugins-activate.js"></script>
+</head>
+
+<body id="page-top">
+<div id="app">
+    <!-- Navigation -->
+    <div class="logo">
+        <i class="fa fa-soccer-ball-o" aria-hidden="true"><span>老李足球</span></i>
+    </div>
+    <a class="menu-toggle rounded" href="#">
+        <i class="fa fa-bars"></i>
+    </a>
+    <nav id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <li class="sidebar-brand">
+                <a class="smooth-scroll" href="#Header"></a>
+            </li>
+            <li class="sidebar-nav-item">
+                <a class="smooth-scroll" href="#page-top">首页</a>
+            </li>
+            <!--      <li class="sidebar-nav-item">-->
+            <!--        <a class="smooth-scroll" href="#About">About</a>-->
+            <!--      </li>-->
+            <li class="sidebar-nav-item">
+                <a class="smooth-scroll" href="#Services">联赛榜单</a>
+            </li>
+            <li class="sidebar-nav-item">
+                <a class="smooth-scroll" href="#Testimonials">英超诸强</a>
+            </li>
+            <li class="sidebar-nav-item">
+                <a class="smooth-scroll" href="#Portfolio">更多</a>
+            </li>
+            <li class="sidebar-nav-item">
+                <a class="smooth-scroll" href="#footer">版权信息</a>
+            </li>
+        </ul>
+    </nav>
+    <!-- Header Starts -->
+
+    <!-- END OF TESTIMONIALS -->
+    <section id="Contact" class="content-section">
+        <div class="container">
+            <div class="block-heading">
+                <h2>添加球员</h2>
+                <!--        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>-->
+            </div>
+            <div class="ab1">
+
+                <div class="col-sm-12 col-md-6 col-lg-6">
+                    <div class="form-wrap">
+                        <div class="fname floating-label">
+                            <input type="text" class="floating-input"  v-model="player.player_id"/>
+                            <label >id</label>
+                        </div>
+                        <div class="fname floating-label">
+                            <input type="text" class="floating-input"  v-model="player.player_name"/>
+                            <label >姓 名</label>
+                        </div>
+                        <div class="fname floating-label">
+                            <input type="text" class="floating-input"  v-model="player.player_number"/>
+                            <label >号 码</label>
+                        </div>
+                        <div class="fname floating-label">
+                            <input type="text" class="floating-input"  v-model="player.player_nation"/>
+                            <label >国 籍</label>
+                        </div>
+                        <div class="fname floating-label">
+                            <input type="text" class="floating-input"  v-model="player.player_age"/>
+                            <label >年 龄</label>
+                        </div>
+                        <div class="fname floating-label">
+                            <input type="text" class="floating-input"  v-model="player.height"/>
+                            <label >身 高</label>
+                        </div>
+                        <div class="fname floating-label">
+                            <input type="text" class="floating-input"  v-model="player.weight"/>
+                            <label >体 重</label>
+                        </div>
+                        <div class="fname floating-label">
+                            <input type="text" class="floating-input"  v-model="player.worth"/>
+                            <label >身 价</label>
+                        </div>
+                        <div class="fname floating-label">
+                            <input type="text" class="floating-input"  v-model="player.club_id"/>
+                            <label >俱乐部号</label>
+                        </div>
+                        <div class="fname floating-label">
+                            <input type="text" class="floating-input"  v-model="player.club_name"/>
+                            <label >俱乐部名</label>
+                        </div>
+                        <div class="fname floating-label">
+                            <input type="text" class="floating-input"  v-model="player.player_position"/>
+                            <label >球员位置</label>
+                        </div>
+                        <div class="fname floating-label">
+                            <input type="text" class="floating-input"  v-model="player.actions"/>
+                            <label >出场数</label>
+                        </div>
+                        <div class="fname floating-label">
+                            <input type="text" class="floating-input"  v-model="player.actAsSub"/>
+                            <label >替补出场数</label>
+                        </div>
+                        <div class="fname floating-label">
+                            <input type="text" class="floating-input"  v-model="player.fgs"/>
+                            <label >进球数</label>
+                        </div>
+                        <div class="fname floating-label">
+                            <input type="text" class="floating-input"  v-model="player.asts"/>
+                            <label >助攻数</label>
+                        </div>
+                        <div class="fname floating-label">
+                            <input type="text" class="floating-input"  v-model="player.rc"/>
+                            <label >红牌数</label>
+                        </div>
+                        <div class="fname floating-label">
+                            <input type="text" class="floating-input"  v-model="player.yc"/>
+                            <label >黄牌数</label>
+                        </div>
+                        <div class="submit-btn">
+                            <button type="button" @click="updatePlayer">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer text-center" id="footer">
+        <div class="container">
+            <ul class="list-inline">
+                <li class="list-inline-item">
+                    <a class="social-link rounded-circle text-white mr-3" href="javascript:void(0)">
+                        <i class="fa fa-github" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="social-link rounded-circle text-white mr-3" href="javascript:void(0)">
+                        <i class="fa fa-qq" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="social-link rounded-circle text-white" href="javascript:void(0)">
+                        <i class="fa fa-weibo" aria-hidden="true"></i>
+                    </a>
+                </li>
+            </ul>
+            <p class="xi">陕ICP备 2021002702号-1</p>
+            <p class="xi">© 2021 李球 Inc. All rights reserved • Terms of Use Privacy Policy</p>
+            <p class="xi">地址:中国陕西省榆林市榆阳区巴小路张窑则</p>
+        </div>
+    </footer>
+</div>
+</body>
+
+</html>
+<script src="./js/vue.js"></script>
+<script src="./js/axios.js"></script>
+<script>
+    const app = new Vue({
+        el: "#app",
+        data: {
+            player_id:"",
+            player:{}
+        },
+        methods:{
+            findOnePlayer(player_id){
+                axios.get("http://localhost:8989/players/findOne?Player_id="+player_id).then((res)=>{
+                    console.log(res.data);
+                    this.player=res.data;
+                });
+            },
+            updatePlayer(){
+              axios.post("http://localhost:8989/players/update",this.player).then((res)=>{
+                  if(res.data.state){
+                      alert(res.data.msg+",点击确定");
+                      location.href='opspur.html';
+                  }else {
+                      alert(res.data.msg);
+                  }
+              })
+            }
+        },
+        created() {
+            this.player_id=location.href.substring(location.href.indexOf("=")+1);
+            this.findOnePlayer(this.player_id);
+        }
+    });
+</script>
